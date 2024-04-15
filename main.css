@@ -2,3 +2,41 @@ body,
 html {
     font-family: 'Tahoma', sans-serif;
 }
+
+.option-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30;
+}
+
+.option-list-item {
+    list-style-type: none;
+    text-align: center;
+}
+
+.option-list-item > label {
+    box-shadow: 5px 4px 10px lightgray;
+    background-color: white;
+    min-width: 300px;
+    padding: 10px 10px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.option-list-item > label > [type="radio"] {
+    border: 0px;
+    width: 100%;
+    height: 2em;
+}
+
+.option-img {
+}
+
+.option-copy {
+    text-align: center;
+}
+
