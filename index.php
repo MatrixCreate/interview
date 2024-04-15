@@ -4,6 +4,7 @@ require_once "api.php";
 
 $project_sizes = [
     'section_title' => 'Scope',
+
     'options' => [
         [
             'title' => 'Small',
@@ -29,6 +30,7 @@ $project_sizes = [
 
 $materials = [
     'section_title' => 'Material',
+
     'options' => [
         'laminate' => [
             'title' => 'Laminate',
@@ -74,6 +76,10 @@ $materials = [
     <h2>
         <?php echo $materials['section_title']; ?>
     </h2>
+</section>
+
+<section class="result">
+    <p class="result_output">Total:</p>
 </section>
 
 </body>
