@@ -33,10 +33,6 @@ html {
     height: 2em;
 }
 
-.option-img {
+.result_output {
+    font-size: 30px;
 }
-
-.option-copy {
-    text-align: center;
-}
-
