@@ -2,22 +2,25 @@
 
 require_once "api.php";
 
-$project_size = [
+$project_sizes = [
     'section_title' => 'Scope',
     'options' => [
-        'low' => [
+        [
             'title' => 'Small',
             'base_price' => 1000, // in pounds
+            'copy' => "12 Units | 15 Msq",
             'img_src' => '/img/project-size-small.png'
         ],
-        'medium' => [
+        [
             'title' => 'Medium',
             'base_price' => 5000,
+            'copy' => "16 Units | 20 Msq",
             'img_src' => '/img/project-size-medium.png',
         ],
-        'high' => [
-            'title' => 'High',
+        [
+            'title' => 'Large',
             'base_price' => 7000,
+            'copy' => "20 Units | 40 Msq",
             'img_src' => '/img/project-size-large.png',
         ],
     ],
@@ -45,6 +48,7 @@ $materials = [
     ],
 ];
 
+
 ?>
 
 <!DOCTYPE html>
@@ -60,11 +64,17 @@ $materials = [
 
 <h1>Build your Kitchen</h1>
 
-<h2>
-    <?php echo $scopes['section_title']; ?>
-</h2>
+<section>
+    <h2>
+        <?php echo $project_sizes['section_title']; ?>
+    </h2>
+</section>
 
-<!-- code here -->
+<section>
+    <h2>
+        <?php echo $materials['section_title']; ?>
+    </h2>
+</section>
 
 </body>
 </html>
